@@ -1,0 +1,43 @@
+<button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"></button>
+<div class="content">
+  <h5>{{breweryData.name}}</h5>
+  
+  <div>Address: {{breweryData.address_1}}</div>
+  <div>Phone Number: {{breweryData.phone}}</div>
+   <div>website : {{breweryData.website_url}}</div>
+   <div>Country: {{breweryData.country}}</div>
+   <div>State: {{breweryData.state}}</div>
+   <div>City: {{breweryData.city}}</div>
+   <div>Street: {{breweryData.street}}</div>
+   <div>PostalCode: {{breweryData.postal_code}}</div>
+   <div>Type: {{breweryData.brewery_type}}</div>
+   
+  </div>
+
+  <div id="review-container">
+    <h2>Write a Review</h2>
+    <textarea id="review-text" placeholder="Write your review here..." rows="5"></textarea>
+    <div class="rating">
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">Very poor</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">Poor</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">Average</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">Good</label>
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5">Excellent</label>
+      
+    </div>
+    <button id="submit-button" (click)="submitReview()">Submit Review</button>
+  </div>
+
+  <div id="review-results">
+    <!-- Display review results here -->
+  </div>
+
+
+
+   
+   

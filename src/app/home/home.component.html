@@ -1,0 +1,35 @@
+
+  <body style="background-image: url('https://cdn.concreteplayground.com/content/uploads/2021/04/7th-Day-Brewery-taproom-supplied.jpg'); background-repeat: no-repeat; height:100vh">
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search Breweries..." name="search" [(ngModel)]="searchInput" required>
+    <select id="search-criteria">
+      <option value="name">Name</option>
+      <option value="city">City</option>
+      <option value="type">Type</option>
+    </select>
+    <button (click)="search()">Search</button>
+  </div>
+
+  <div id="search-results">
+    <div *ngIf="breweryData">
+      <div *ngFor="let brewery of breweryData">
+        <div class="card w-75 ms-5 cursor-pointer" class="card col-6 offset-3 bg-warning bg-opacity-50" (click)="openDetails(brewery)">
+          <div class="card-body" class="p-3 mb-2 bg-warning text-dark ">
+            
+            <h5 class="card-title">{{brewery.name}}</h5>
+            <div>Address: {{brewery.address_1}}</div>
+            <div>Phone Number: {{brewery.phone}}</div>
+             <div>website : {{brewery.website_url}}</div>
+             <div>State: {{brewery.state}}</div>
+             <div>City: {{brewery.city}}</div>
+             <div>Type: {{brewery.brewery_type}}</div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  </body>
+  
+
+

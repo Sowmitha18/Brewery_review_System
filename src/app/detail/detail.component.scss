@@ -1,0 +1,62 @@
+#review-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+  }
+
+  #review-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .rating label {
+    margin-right: 10px;
+  }
+
+  .rating input[type="radio"] {
+    display: none;
+  }
+
+  .rating input[type="radio"] + label:before {
+    content: "\2605";
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  .rating input[type="radio"]:checked + label:before {
+    color: #ffcc00; /* Yellow star color for selected rating */
+  }
+
+  #submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .content{
+    margin-left: 20px;
+  }

@@ -1,0 +1,42 @@
+    /* Style the search bar and dropdown */
+    #search-container {
+        display: flex;
+        justify-content: center; /* Horizontally center the search bar and dropdown */
+        margin: 20px; 
+        margin-top: 20px;
+      }
+      
+      #search-input {
+        padding: 10px;
+        width: 300px; /* Wider input field */
+        border: 1px solid #ccc; /* Add a border for better separation */
+        border-radius: 5px; /* Add rounded corners */
+      }
+      
+      #search-criteria {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      #search-criteria option {
+        padding: 10px;
+      }
+      
+      #search-button {
+        padding: 10px;
+        background-color: #007bff; /* Blue button color */
+        color: white; /* White text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px; /* Add some space between the dropdown and the button */
+      }
+      
+      #search-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+      
+      body{
+        height: 100%;
+      }
